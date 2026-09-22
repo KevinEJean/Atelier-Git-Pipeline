@@ -10,7 +10,7 @@ jobs:
   compilation:
     runs-on: ubuntu-latest
     steps:
-      - uses: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v5
       - name: Set up Java SDK 25
         uses: actions/checkout@v5
