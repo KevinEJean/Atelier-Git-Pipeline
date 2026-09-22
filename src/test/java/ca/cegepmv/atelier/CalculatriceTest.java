@@ -163,4 +163,9 @@ class CalculatriceTest {
         // Vérifiez que diviser(-10, 2) retourne -5.
         assertEquals(resultat, a / b);
     }
+
+    // @Test
+    // void testWorkflow() {
+    //     fail("workflow");
+    // }
 }
