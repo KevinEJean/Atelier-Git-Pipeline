@@ -20,4 +20,4 @@ jobs:
       - name: Frournire acces au runner
         run: chmod +x mvnw
       - name: Compilation du projet Maven
-        run: mvnw compile
+        run: ./mvnw compile
