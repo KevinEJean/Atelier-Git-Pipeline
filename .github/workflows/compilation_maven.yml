@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v5
         with:
           name: rapport-jacoco
-          path: target/site/jacoco/ca.cegepmv.atelier/
+          path: target/site/jacoco/index.html
