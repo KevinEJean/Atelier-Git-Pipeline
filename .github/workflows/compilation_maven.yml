@@ -22,9 +22,9 @@ jobs:
       - name: Frournire acces au runner
         run: chmod +x mvnw
       - name: Compiler et tester le projet Maven
-        run: ./mvnw -B clean package -DskipTests
+        run: ./mvnw clean test
       - name: Publier le rapport de tests
         uses: actions/upload-artifact@v5
         with:
-          name: rapport-surefire
+          name: rapport-jacoco
           path: target/site/jacoco/ca.cegepmv.atelier/index.html
