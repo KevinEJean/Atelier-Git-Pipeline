@@ -27,9 +27,4 @@ jobs:
         uses: actions/upload-artifact@v5
         with:
           name: rapport-surefire
-          path: target/surefire-reports/
-      - name: Publier le .jar en artefact
-        uses: actions/upload-artifact@v5
-        with:
-          name: application-jar
-          path: target/*.jar
+          path: target/site/jacoco/ca.cegepmv.atelier/index.html
