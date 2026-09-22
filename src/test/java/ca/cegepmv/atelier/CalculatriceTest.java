@@ -68,15 +68,27 @@ class CalculatriceTest {
     @Test
     void multiplierDeuxNombres() {
         // TODO: Arrange - Act - Assert
+        const a, b = 4, 5;
+        Calculatrice calc = new Calculatrice();
+
+        const resultat = calc.multiplier(a, b);
+
         // Vérifiez que multiplier(4, 5) retourne 20
-        fail("Test à compléter");
+        assertEquals(resultat, a * b);
+
     }
 
     @Test
     void maxRetourneLePlusGrandDesDeuxNombres() {
         // TODO: Arrange - Act - Assert
+        const a, b = 7, 3;
+        Calculatrice calc = new Calculatrice();
+
+        const resultat = calc.max(a, b);
+
         // Vérifiez que max(7, 3) retourne 7
-        fail("Test à compléter");
+        assertEquals(resultat, a * b);
+
     }
 
     // ------------------------------------------------------------------

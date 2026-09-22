@@ -1,0 +1,21 @@
+name: Compilation du projet Maven
+
+# Only executes when pushing from main
+on:
+  push:
+    branches: [ main ]
+
+# Ordre des exécutions
+jobs:
+  compilation:
+    rules-on: ubuntu-latest
+    steps:
+      - uses: Checkout repository
+        uses: actions/checkout@v5
+      - name: Set up Java SDK 25
+        uses: actions/checkout@v5
+        with:
+          distribution: temurin
+          java-version: "25"
+      - name: Compilation du projet Maven
+        run: mvnw compile
